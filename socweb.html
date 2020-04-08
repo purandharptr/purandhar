@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>stuweb</title>
+        <link rel="icon" href="ctlg.png">
+        <meta name="viewport" content="width=device-width,intial-scale=1">
+        <style>
+            body{
+                zoom: 120%;
+                background-color: rgb(180, 179, 179);
+            }
+            .nav{
+                width: 100%;
+                height:40px;
+                background-color:rgb(102, 139, 148);
+                color:white;
+                cursor: pointer;
+                border-radius: 10px;
+            }
+            .menuitem{
+                float: left;
+                margin-top: 10px;
+                margin-left: 20px;
+                font-family:Arial, Helvetica, sans-serif;
+            }
+            .menuitem:hover{
+                background-color:gray;
+                background-image:linear-gradient(gray,rgb(90, 90, 190));
+                box-shadow:2px 1px rgb(180, 179, 179);
+                border-radius: 3px;
+            }
+            a{
+                color: white;
+                text-decoration:none;
+            }
+            .logo{
+                height: 15px;
+                width: 15px;
+            }
+            .profile{
+                margin-top: 0.3cm;
+                float: right;
+                width: 20%;height:500px;
+                background-color:rgb(255, 251, 251);
+                border-radius: 10px;
+                text-align: center;
+            }
+            .profile:hover{
+                box-shadow: -2px -2px rgb(138, 138, 138);
+            }
+            .msg{
+                margin-top: 0.3cm;
+                float: left;
+                width: 25%;
+                height:500px;
+                background-color:rgb(255, 251, 251);
+                border-radius: 5px;
+                overflow:auto;
+            }
+            .msg:hover{
+                box-shadow:2px 2px rgb(138, 138, 138);
+            }
+            * {
+  box-sizing: border-box;
+}
+
+.msgbox {
+  float: left;
+  width: 100%;
+  border-style:solid;
+  border-color:lightgray;
+}
+* {
+  box-sizing: border-box;
+}
+
+.onbox {
+  float: left;
+  background-color: lightgreen;
+}
+.onpro{
+    background-color: white;
+    border-radius: 50%;
+    margin-left: 5px;
+}
+
+            .news{
+                margin-top: 0.3cm;
+                height: 500px;
+                width: 53%;
+                float: right;
+                background-color:rgb(255, 251, 251);
+                border-radius: 10px; 
+                margin-right: 10px;
+                overflow: auto;
+            }
+            button{
+                border: none;
+                border-radius:10px;
+                margin-bottom:10px;
+                box-shadow:0 7px gray;
+                width:70%;
+                outline: none;
+                opacity: 0.7;
+                background-color: rgb(155, 154, 154);
+                cursor: pointer;
+            }
+            button:hover{
+                opacity: 1;
+            }
+            button:active{
+                background-color: rgb(107, 226, 107);
+                box-shadow:0 4px black;
+                transform: translateY(4px);
+            }
+.container {
+  border: 2px solid #dedede;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  padding: 1px;
+  margin: 5px 5px;
+}
+
+.darker {   
+  border-color: #aaa;
+  background-color: #bbb;
+}
+
+.container::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.container img {
+  float: left;
+  max-width: 60px;
+  width: 100%;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+.container img.right {
+  float: right;
+  margin-left: 20px;
+  margin-right:0;
+}
+
+.time-right {
+  float: right;
+  color: #aaa;
+}
+
+.time-left {
+  float: left;
+  color: #999;
+}
+* {
+  box-sizing: border-box;
+}
+
+.box {
+  float: left;
+  width: 100%;
+  margin-bottom:30px;
+}
+* {
+  box-sizing: border-box;
+}
+
+.lbox {
+  float: left;
+  width:33.33%;
+  padding-left: 10px;
+}
+        </style>
+    </head>
+    <body>
+        <section>
+            <div class="nav">
+                <div class="menuitem">
+                    &#127968 Home
+                </div>
+                <div class="menuitem">
+                    &#128479 News Feed
+                </div>
+                <div class="menuitem">
+                    &#128101 Friends
+                </div>
+                <div class="menuitem">
+                    &#128444 Stories
+                </div>
+                <div style="float: right;margin-right: 10px;" class="menuitem">
+                    &#128100 Login/SignUp
+                </div>
+                <div class="menuitem">
+                    &#128172 Messages
+                </div>
+                <div class="menuitem">
+                    &#128276 Notifications
+                </div>
+                <div class="menuitem">
+                    &#128269 Search
+                </div>
+            </div>
+            <div class="profile">
+                <p style="font-size:large;color: teal;">My Profile</p>
+                <p style="font-size: xxx-large;height: 30px;">&#128372</p>
+                <p>PTR</p> 
+                <hr>
+                <p>&#128188 Student</p>
+                <p>&#128214 Bachelor of Technology</p>
+                <p>&#127891 Lovely Professional University</p>
+                <p>&#127874 01 Jan 2001</p>
+                <p>&#128222 9876543210</p>
+                <p>&#128231 ptr@gmail.com</p>
+                <button>&#128394 Edit/Update Profile</button>
+            </div>
+            <div class="clearfix">
+            <div class="msg">
+            <p style="font-size:large;color: teal;text-align: center;">Messages</p>
+            <form>
+                <input type="text" placeholder="search for friend" style="margin-left: 50px;margin-bottom: 10px;"/>
+            </form>
+            <div> 
+                <input style="background-color: green ;font-weight: bolder;" type="submit" value="Online"> 
+              </div>
+                
+                <div class="msgbox" >
+                    <p style="border-style: outset; font-size: x-large;">&#128112 APTR
+                        <span style="float: right;
+                        background-color: darkblue ;color: white;
+                        border-radius: 50%;
+                        padding-right: 6px;
+                        padding-left: 6px; 
+                        cursor: pointer;">i</span></p>
+                    <div class="container">
+                        <p style="float: left;">&#128112</p>
+                        <p>Hello. How are you today?</p>
+                        <span class="time-right">11:00</span>
+                      </div>
+                      
+                      <div class="container darker">
+                        <p style="float:right">&#128372</p>
+                        <p>Hey! I'm fine. Thanks for asking!</p>
+                        <span class="time-left">11:01</span>
+                      </div>
+                      
+                      <div class="container">
+                        <p style="float: left;">&#128112</p>
+                        <p>Sweet! So, what do you wanna do today?</p>
+                        <span class="time-right">11:02</span>
+                      </div>
+                      <div class="container darker">
+                        <p style="float:right">&#128372</p>
+                        <p>Nah, I dunno. Play soccer.. or learn more coding perhaps?</p>
+                        <span class="time-left">11:05</span>
+                      </div>    
+                </div>
+                <div class="box" >
+                <form style="border-style:outset;">
+                    <input type="text" placeholder="Type here">
+                    <input style="background-color: rgb(86, 86, 192);cursor:pointer;" type="submit" value="send">
+                </form>
+                </div>
+              </div>
+                </div>
+                </div>
+                <div class="news">
+                    <p style="font-size:large;color: rgb(52, 136, 136);text-align: center;">News Feed</p>
+                    <p>&#128102;&#127996 Advik<span style="font-size:xx-small;color:gray;text-align:end;"> 11 min ago</span></p>
+                    <div>
+                        <div class="box" style="background-color:#ccc">
+                        <p style="font-family:Arial, Helvetica, sans-serif;">Web design and development trends are fickle 
+                        and they keep changing every year, therefore
+                        in this blog; we are about to discover 6 best 
+                        website designs trends for 2020 loaded with 
+                        incredible styles, ever-present minimalism and 
+                        eye-catching colorful flat illustrations which
+                        will make your on-screen experience more realistic
+                        and satisfying than ever before.
+                        <a href="https://www.techgenyz.com/2020/04/04/website-design-trends/" style="color: blue;">Learn more</a></p>
+                        <img src="https://www.techgenyz.com/wp-content/uploads/2020/04/website-design.jpg"
+                        style="width:550px;height:220px;">
+                        <div>
+                            <div class="lbox" style="background-color:#aaa">
+                            <p>&#128077 Like.</p>
+                            </div>
+                            <div class="lbox" style="background-color:#aaa">
+                            <p>&#128172 Comment</p>
+                            </div>
+                            <div class="lbox" style="background-color:#aaa">
+                            <p>&#x2197 Share</p>
+                            </div>
+                          </div>
+                        </div>
+                        <hr>
+                        <p>&#128105 Tech Hunk<span style="font-size:xx-small;color:gray;text-align:end;"> 58 min ago</span></p>
+                        <div class="box" style="background-color:#ccc">
+                        <p>How Is Artificial Intelligence Changing The Face of Web Design and Development?
+                        <a href="Read more at: https://yourstory.com/mystory/artificial-intelligence-web-design-development"style="color: blue;">Learn more</a></p>
+                        <img src="https://images.yourstory.com/cs/1/a8255b902de611eaa742cd45a762896a/AI-for-enterprise-Apps-1579071380502.jpg?fm=png&auto=format&w=800"
+                        style="width:550px;height:auto;">
+                        <div>
+                            <div class="lbox" style="background-color:#aaa">
+                            <p>&#128077 Like.</p>
+                            </div>
+                            <div class="lbox" style="background-color:#aaa">
+                            <p>&#128172 Comment</p>
+                            </div>
+                            <div class="lbox" style="background-color:#aaa">
+                            <p>&#x2197 Share</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+                <hr>
+                </section>
+    </body>
+</html>
